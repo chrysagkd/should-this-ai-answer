@@ -1,0 +1,28 @@
+model_id: actg_cox_v1
+substrate: ACTG clinical trial cohort
+endpoint:
+  modelled: progression_to_aids
+  not_valid_for:
+  - death
+  - overall_survival
+population:
+  age:
+    min: 30.0
+    max: 55.0
+required_inputs:
+- age
+- cd4
+- priorzdv
+- karnof
+input_units:
+  priorzdv: months
+  cd4: cells_per_mm3
+  age: years
+coding:
+  karnof:
+    scheme: karnofsky
+    allowed:
+    - '70'
+    - '80'
+    - '90'
+    - '100'

@@ -1,0 +1,44 @@
+model_id: gbsg2_cox_v1
+substrate: GBSG2 (German Breast Cancer Study Group 2)
+endpoint:
+  modelled: recurrence_free_survival
+  not_valid_for:
+  - overall_survival
+  - cancer_specific_survival
+population:
+  age:
+    min: 45.0
+    max: 85.0
+required_inputs:
+- age
+- tsize
+- pnodes
+- tgrade
+- progrec
+input_units:
+  tsize: mm
+  age: years
+  progrec: fmol_per_mg
+coding:
+  tgrade:
+    scheme: three_tier
+    allowed:
+    - I
+    - II
+    - III
+observed_ranges:
+  age:
+    p01: 45.0
+    p99: 75.0
+  tsize:
+    p01: 9.08
+    p99: 76.38000000000011
+  pnodes:
+    p01: 1.0
+    p99: 24.920000000000073
+  tgrade:
+    p01: 0.0
+    p99: 2.0
+  progrec:
+    p01: 0.0
+    p99: 922.5800000000008

@@ -1,0 +1,6 @@
+scikit-survival>=0.28
+pyyaml
+pandas
+numpy
+scipy
+matplotlib

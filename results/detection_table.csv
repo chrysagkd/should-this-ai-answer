@@ -1,0 +1,7 @@
+Class,n,A blocked,B blocked,Median decile shift,"Silent (passed both, shifted)"
+"Clean requests (valid, wrongly blocked)",100,5% (2-11),0% (0-4),n/a,n/a
+Required input absent,100,7% (3-14),100% (96-100),0.0 (IQR 0.0-1.0),0%
+Unit mismatch,100,11% (6-19),100% (96-100),1.0 (IQR 1.0-2.0),0%
+Coding-scheme mismatch,100,31% (23-41),100% (96-100),1.0 (IQR 0.8-2.0),0%
+Endpoint not modelled,100,9% (5-16),100% (96-100),0 (output identical),n/a
+Outside development population,100,23% (16-32),100% (96-100),n/a,n/a
