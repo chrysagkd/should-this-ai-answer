@@ -175,4 +175,4 @@ All randomness is seeded.
 
 ## Licence
 
-MIT — see [`LICENSE`](LICENSE).
+MIT 
