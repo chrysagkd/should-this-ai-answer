@@ -112,11 +112,11 @@ pip install -r requirements.txt
 Run the main evaluation:
 
 ```bash
-python src/01_fit_models.py
-python src/02_build_requests.py
-python src/04_run_eval.py
-python src/05_figures.py
-python src/06_second_cohort.py
+01_fit_models.py
+02_build_requests.py
+04_run_eval.py
+05_figures.py
+06_second_cohort.py
 ```
 
 The scripts perform the following steps:
@@ -146,13 +146,13 @@ All randomness is seeded.
 
 | File or directory          | Purpose                                                                                    |
 | -------------------------- | ------------------------------------------------------------------------------------------ |
-| `src/01_fit_models.py`     | Fits the substrate model and derives the operating specification from the development data |
-| `src/02_build_requests.py` | Builds 600 requests across six classes from real patient records                           |
-| `src/pipeline.py`          | Prediction path under test, including silent imputation                                    |
-| `src/03_mechanisms.py`     | Implements the two release mechanisms                                                      |
-| `src/04_run_eval.py`       | Runs both mechanisms and writes the detection table                                        |
-| `src/05_figures.py`        | Generates the main comparison figure                                                       |
-| `src/06_second_cohort.py`  | Runs the second-cohort and endpoint-disagreement analysis                                  |
+| `01_fit_models.py`     | Fits the substrate model and derives the operating specification from the development data |
+| `02_build_requests.py` | Builds 600 requests across six classes from real patient records                           |
+| `pipeline.py`          | Prediction path under test, including silent imputation                                    |
+| `03_mechanisms.py`     | Implements the two release mechanisms                                                      |
+| `04_run_eval.py`       | Runs both mechanisms and writes the detection table                                        |
+| `05_figures.py`        | Generates the main comparison figure                                                       |
+| `06_second_cohort.py`  | Runs the second-cohort and endpoint-disagreement analysis                                  |
 | `spec/`                    | Machine-readable operating specifications in YAML                                          |
 | `results/`                 | Detection tables, per-request records and figures                                          |
 | `requirements.txt`         | Python dependencies                                                                        |
